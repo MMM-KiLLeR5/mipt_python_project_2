@@ -38,3 +38,10 @@
 
 8. **Main (основной модуль):**
    - Инициализация и запуск контроллера бота.
+
+### Запуск через докер контейнер
+    docker build -t telegram_bot .
+    touch .env(внутри неё, сооздадите переменные окружение BOT_TOKEN - токен бота, ADMINS_ID - ID чата службы поддержки, ADMINS - админы)
+### Тоже два спопоба запуска
+    docker run --env-file=.env --name telegram_bot_service telegram_bot
+    docker run -e BOT_TOKEN=[токен бота] ADMINS_ID=[ID чата службы поддержки] ADMINS=[api]
