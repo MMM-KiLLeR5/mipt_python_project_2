@@ -1,0 +1,4 @@
+aiogram==2.25.2
+pymystem3==0.2.0
+bs4==0.0.2
+scikit-learn==1.1.3
